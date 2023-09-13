@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#B7B9C1"
+    tools:context=".OneA">
+
+    <Button
+        android:id="@+id/btn_plus_one"
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_result"
+        app:layout_constraintStart_toEndOf="@+id/tv_result"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"/>
+
+
+    <Button
+        android:id="@+id/btn_minus_one"
+        app:layout_constraintTop_toBottomOf="@id/tv_result"
+        app:layout_constraintEnd_toEndOf="@id/tv_result"
+        android:layout_marginEnd="100dp"
+        android:textSize="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-1 "/>
+
+    <Button
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/btn_next"
+        android:text="NEXT"
+        app:layout_constraintTop_toBottomOf="@id/tv_result"
+        app:layout_constraintStart_toStartOf="@id/tv_result"
+        app:layout_constraintEnd_toEndOf="@id/tv_result"
+        android:textSize="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="100sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
